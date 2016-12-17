@@ -1,0 +1,235 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+}
+input:focus {
+    outline: none;
+}
+button:focus {
+    outline: 0;
+}
+.btn-search {
+    background-color: #599e52;
+    border: 0;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    float: right;
+    border-left: solid 2px #fff;
+    height: 40px;
+    line-height: 40px;
+    width: 60px;
+}
+.btn-search:hover {
+    background-color: #68b661;
+}
+.btn-gallery {
+    position: fixed;
+    right: 0;
+    top: 190px;
+    z-index: 2;
+    height: 40px;
+    background-color: #252525;
+    border: none;
+    color: #828282;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: -1px 0px 2px 0px #2f2f2f;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    cursor: pointer;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.btn-add-to-gallery {
+    height: 30px;
+    display: block;
+    margin: auto;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    color: #828282;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    width: 100%;
+    line-height: 30px;
+}
+.btn-add-to-gallery:hover {
+    color: #000;
+}
+.btn-remove-from-gallery {
+    height: 20px;
+    display: block;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    color: #828282;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    width: 100%;
+    margin: 0;
+}
+.btn-add-to-gallery:hover {
+    color: #000;
+}
+.main {
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.banner {
+    width: 100%;
+    height: 260px;
+    position: relative;
+    background: #084852;
+    background: linear-gradient(333deg, #093a5d 6%, #0b4d54 51%, #0e4a61 75%);
+}
+.banner .content {
+    width: 500px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -90px;
+    text-align: center;
+}
+.title {
+    font-size: 22px;
+    letter-spacing: 7px;
+    color: #fff;
+    margin: 20px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+.banner .content .input-wrapper {
+    border: solid 2px white;
+    border-radius: 5px;
+    margin: auto;
+    width: 380px;
+    height: 40px;
+}
+.banner .content input {
+    color: #FFF;
+    background-color: inherit;
+    border: none;
+    width: 300px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+    height: 40px;
+}
+.gallery-wrapper {
+    background-color: #252525;
+    position: fixed;
+    height: 100%;
+    width: 0;
+    z-index: 2;
+    right: 0;
+    text-align: center;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.gallery-img-wrapper {
+    display: inline-block;
+    margin: 10px;
+    box-shadow: 0px 0px 5px 0px #3a3a3a;
+    background-color: #fff;
+    padding: 2px;
+}
+#gallery {
+    overflow-y: auto;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 10px;
+    color: #565656;
+}
+#gallery .gallery-img {
+    max-height: 100px;
+    max-width: 200px;
+    cursor: pointer;
+}
+#grid {
+    text-align: center;
+    padding-top: 10px;
+}
+#grid .grid-img {
+    max-height: 200px;
+    max-width: 300px;
+    cursor: pointer;
+}
+#grid .image-wrapper {
+    display: inline-block;
+    margin: 10px;
+    box-shadow: 0px 3px 5px #828282;
+}
+#enlarge-background {
+    width: 100%;
+    position: absolute;
+    background-color: rgba(47, 47, 47, 0.48);
+    z-index: 10;
+    display: none;
+}
+.enlarge {
+    max-width: none !important;
+    max-height: none !important;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 11;
+    padding: 10px;
+    background-color: #ffF;
+    box-shadow: 0px 0px 13px 2px #292929;
+}
+.error-msg {
+    padding: 20px;
+    text-align: center;
+    color: red;
+    position: absolute;
+    width: 250px;
+    left: 50%;
+    margin-left: -125px;
+    margin-top: 100px;
+    border: solid 1px #f00;
+    border-radius: 20px;
+    background-color: #fff8f8;
+}
+#load-more {
+    width: 50px;
+    height: 50px;
+    background-color: #eaeaea;
+    font-size: 35px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #fff;
+    border: solid 1px #dadada;
+    border-radius: 50%;
+    display: none;
+}
+#photo-count {
+    font-size: 14px;
+}
+.visible {
+    display: block !important;
+}
+.visible-gallery {
+    width: 380px !important;
+    box-shadow: 0px 0px 5px 1px #2f2f2f;
+}
+.remove-scroll {
+    overflow-y: hidden;
+}

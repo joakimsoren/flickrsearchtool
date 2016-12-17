@@ -1,0 +1,4 @@
+APIKey: 71ebcc9671fd763181c14d0854bdb428
+Secret: e4c2cb85373da1bd
+
+flickr search query: https://api.flickr.com/services/rest/?format=json&sort=random&method=flickr.photos.search&tags=chelsea&api_key=71ebcc9671fd763181c14d0854bdb428

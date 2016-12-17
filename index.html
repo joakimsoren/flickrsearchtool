@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale =1.0" />
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script type="text/javascript" src="scripts/script.js"></script>
+      <script type="text/javascript" src="scripts/gallery.js"></script>
+      <script type="text/javascript" src="scripts/enlarge.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet"/>
+      <title>Flickr Search</title>
+      <!-- <link rel="shortcut icon" type="image/x-icon" href="img/ikon.ico" />-->
+   </head>
+   <body>
+      <div id="enlarge-background" onclick="RemoveEnlarge()"></div>
+      <div class="gallery-wrapper">
+         <div id="gallery">
+         </div>
+      </div>
+      <div class="main">
+         <div class="banner">
+            <button class="btn-gallery" onclick="ShowGallery()">
+            GALLERY
+            <br>
+            (<span id="galleryCount">0</span>)
+            </button>
+            <div class="content">
+               <div class="title">FLICKR SEARCHTOOL</div>
+               <div class="input-wrapper">
+                  <input type="text" id="searchQuery">
+                  <button class="btn-search" onclick="SubmitSearch(document.getElementById('searchQuery').value)">Search
+                  </button>
+               </div>
+            </div>
+         </div>
+         <div id="grid">
+         </div>
+         <div id="load-more" onclick="LoadMore()">+</div>
+      </div>
+   </body>
+</html>
