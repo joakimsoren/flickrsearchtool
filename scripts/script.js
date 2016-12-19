@@ -11,11 +11,11 @@ function SubmitSearch(query) {
     }
 }
 
-
 function RenderItems(query, page) {
 
     var url = UrlBuilder(query, page);
-
+    document.getElementById("load-more").style.display = "none";
+    
     RequestAsync(url,
         function(response) {
 
